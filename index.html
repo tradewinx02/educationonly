@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pankaj Bhardwaj - Educational Community</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+          n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+  }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init','1382602544041252');
+  fbq('track','PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1382602544041252&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    body {
+      background: radial-gradient(circle at 50% 20%, #112240 0%, #0a1324 45%, #050b14 100%);
+      min-height: 100vh;
+    }
+
+    .modal {
+      display: none;
+      background: rgba(0,0,0,0.85);
+    }
+
+    .modal.active {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4 font-sans antialiased text-gray-200">
+
+  <div class="w-full max-w-sm bg-[#0c1322]/95 backdrop-blur-md border border-slate-700/60 rounded-3xl p-6 text-center shadow-[0_20px_50px_rgba(0,0,0,0.7)] relative">
+    
+    <!-- Profile Section -->
+    <div class="relative w-24 h-24 mx-auto mb-4">
+      <div class="w-full h-full rounded-full border-2 border-yellow-500 p-1 shadow-md shadow-yellow-500/20">
+        <img src="https://i.imgur.com/rS8v7FW.jpeg"
+             alt="Pankaj Bhardwaj"
+             class="w-full h-full object-cover rounded-full"
+             loading="eager"
+             referrerpolicy="no-referrer">
+      </div>
+    </div>
+
+    <!-- Title & Brand -->
+    <div class="flex items-center justify-center gap-2 mb-1">
+      <i class="fa-solid fa-crown text-yellow-500 text-lg"></i>
+
+      <h1 class="text-xl font-black tracking-wider text-yellow-500 uppercase">
+        Pankaj Bhardwaj
+      </h1>
+
+      <i class="fa-solid fa-crown text-yellow-500 text-lg"></i>
+    </div>
+    
+    <p class="text-xs text-gray-400 mb-4 flex items-center justify-center gap-1">
+      <span class="text-emerald-400">✔</span>
+      Trusted by thousands of learners
+    </p>
+
+    <!-- Badges -->
+    <div class="flex justify-center gap-2 mb-6">
+      <span class="bg-[#152033] border border-slate-700/70 text-gray-300 text-xs px-3 py-1.5 rounded-xl">
+        24/7 Updates
+      </span>
+
+      <span class="bg-[#152033] border border-slate-700/70 text-gray-300 text-xs px-3 py-1.5 rounded-xl">
+        Free to Join
+      </span>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="https://t.me/+cq7QcYpnN644MjY1"
+       target="_blank"
+       rel="noopener noreferrer"
+       onclick="trackLeadEvent(event);"
+       class="w-full py-3.5 px-4 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold rounded-2xl flex items-center justify-center gap-2.5 shadow-lg shadow-sky-500/30 active:scale-95 transition">
+
+      <i class="fa-brands fa-telegram text-xl"></i>
+      <span>Join on Telegram</span>
+    </a>
+
+    <!-- Feature Badges -->
+    <div class="mt-6 space-y-2.5">
+
+      <div class="w-full py-2.5 px-4 bg-[#131c2e] border border-slate-800 rounded-xl text-xs font-medium text-gray-300 flex items-center gap-2">
+        <span class="text-emerald-400">✔</span>
+        Market Insights & Discussions
+      </div>
+
+      <div class="w-full py-2.5 px-4 bg-[#131c2e] border border-slate-800 rounded-xl text-xs font-medium text-gray-300 flex items-center gap-2">
+        <span class="text-emerald-400">✔</span>
+        Learn with Practical Case Studies
+      </div>
+
+      <div class="w-full py-2.5 px-4 bg-[#131c2e] border border-slate-800 rounded-xl text-xs font-medium text-gray-300 flex items-center gap-2">
+        <span class="text-emerald-400">✔</span>
+        Educational Community Access
+      </div>
+
+    </div>
+
+    <!-- Compliance Footer -->
+    <div class="mt-6 pt-4 border-t border-slate-800 text-[10px] text-gray-500 leading-relaxed">
+
+      <p class="mb-2">
+        Disclaimer: This platform is for educational and case-study purposes only.
+        We do not provide investment advice, trading calls, or guaranteed returns.
+      </p>
+
+      <div class="flex justify-center gap-3 text-gray-400 underline mb-3">
+
+        <button type="button"
+                onclick="toggleModal('privacyModal')"
+                class="hover:text-gray-300">
+          Privacy Policy
+        </button>
+
+        <span>•</span>
+
+        <button type="button"
+                onclick="toggleModal('termsModal')"
+                class="hover:text-gray-300">
+          Terms of Service
+        </button>
+
+      </div>
+
+      <!-- Powered By ADB Agency -->
+      <a href="YOUR_ADB_AGENCY_TELEGRAM_LINK"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-block text-gray-500 hover:text-sky-400 transition underline">
+        Powered By @ADBAGENCY
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- Privacy Modal -->
+  <div id="privacyModal"
+       class="modal fixed inset-0 z-50 items-center justify-center p-4">
+
+    <div class="bg-slate-900 border border-slate-700 p-6 rounded-2xl max-w-sm w-full text-left max-h-[80vh] overflow-y-auto">
+
+      <h3 class="text-base font-bold mb-2 text-white">
+        Privacy Policy
+      </h3>
+
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">
+        We value your privacy. We do not sell or rent personal information
+        to third parties. Any tracking or analytical data collected is
+        strictly for community optimization and educational delivery.
+      </p>
+
+      <button type="button"
+              onclick="toggleModal('privacyModal')"
+              class="w-full bg-slate-800 text-white text-xs py-2 rounded-lg font-bold">
+        Close
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div id="termsModal"
+       class="modal fixed inset-0 z-50 items-center justify-center p-4">
+
+    <div class="bg-slate-900 border border-slate-700 p-6 rounded-2xl max-w-sm w-full text-left max-h-[80vh] overflow-y-auto">
+
+      <h3 class="text-base font-bold mb-2 text-white">
+        Terms of Service
+      </h3>
+
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">
+        The materials shared on this platform are for educational and
+        case-study purposes only. No communication represents an offer
+        or solicitation for buying or selling securities.
+      </p>
+
+      <button type="button"
+              onclick="toggleModal('termsModal')"
+              class="w-full bg-slate-800 text-white text-xs py-2 rounded-lg font-bold">
+        Close
+      </button>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.toggle('active');
+    }
+
+    function trackLeadEvent(event) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', {
+          content_name: 'Telegram Educational Community'
+        });
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
